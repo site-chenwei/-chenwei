@@ -1,0 +1,16 @@
+{
+  "_spec": "0.0.4",
+  "author": {
+    "name": "陈炜"
+  },
+  "license": "MIT",
+  "module": "index.js",
+  "name": "@chenwei116057/bmap",
+  "peerDependencies": {
+    "@ionic-native/core": "^5.1.0",
+    "@angular/core": "*",
+    "rxjs": "^6.3.0"
+  },
+  "typings": "index.d.ts",
+  "version": "0.0.4"
+}
