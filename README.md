@@ -1,5 +1,4 @@
-# npm@chenwei116057
- 插件指引TS指引文件目录
+Cordova插件指引TS指引文件目录，目前包含[amap](https://github.com/chenwei116057/chenwei-plugin-amap)、[bmap](https://github.com/chenwei116057/chenwei-plugin-bmap)、[link-account](https://github.com/chenwei116057/chenwei-plugin-link-account)
  ## amap
   高德地图插件[chenwei-plugin-amap](https://github.com/chenwei116057/chenwei-plugin-amap)的指引说明文件，安装此依赖后即可在angular项目直接注入AmapPlugin进行使用
  ## bmap
