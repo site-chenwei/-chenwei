@@ -1,5 +1,4 @@
 {
-  "_spec": "1.0.3",
   "author": {
     "name": "陈炜"
   },
@@ -7,10 +6,10 @@
   "module": "index.js",
   "name": "@chenwei116057/amap",
   "peerDependencies": {
-    "@ionic-native/core": "^5.1.0",
+    "@ionic-native/core": "*",
     "@angular/core": "*",
-    "rxjs": "^6.3.0"
+    "rxjs": "*"
   },
   "typings": "index.d.ts",
-  "version": "1.0.3"
+  "version": "2.0.2"
 }

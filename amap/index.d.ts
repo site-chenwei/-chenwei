@@ -1,4 +1,5 @@
 import {IonicNativePlugin} from '@ionic-native/core';
+import {Observable} from "rxjs";
 
 export declare class AMapPlugin extends IonicNativePlugin {
     getLocation(): Promise<LocationResult | void>;
@@ -6,6 +7,14 @@ export declare class AMapPlugin extends IonicNativePlugin {
     getWeatherInfo(params: { adCode: string }): Promise<WeatherInfo | void>;
 
     calculateDistance(params: { startLatitude: number, startLongitude: number, endLatitude: number, endLongitude: number }): Promise<number | void>;
+
+    addGeofence(params: { latitude: number, longitude: number, length: number, customId: string }): Promise<void>;
+
+    showMap(): Promise<any>;
+
+    geofenceResult(): Observable<GeoFenceResult | void>;
+
+    clearGeofence(): Promise<void>;
 }
 
 export interface LocationResult {
@@ -69,6 +78,17 @@ export interface LocationResult {
      * 定位时间
      */
     locationTime: Date
+}
+
+export interface GeoFenceResult {
+    /**
+     * 状态，1:进入围栏区域 2:离开围栏区域 4：停留在围栏区域
+     */
+    status: number;
+    /**
+     * 业务GeoFenceId
+     */
+    customId: string;
 }
 
 export interface WeatherInfo {
